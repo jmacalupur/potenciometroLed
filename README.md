@@ -1,8 +1,8 @@
-#Entendiendo los puertos Analógicos
+# Entendiendo los puertos Analógicos
 
 En este proyecto aprenderemos qué es un Puerto Analógico de un Arduino, qué es un potenciómetro y ensamblar un sistema con él.
 
-#¿Qué es un puerto analógico?
+# ¿Qué es un puerto analógico?
 Es un puerto que recibe una señal directa que va a representar cómo se está comportando un sensor frente a un fenómeno. Por ejemplo: La luz, la temperatura, el movimiento, etc. 
 
 Estos puertos se encuentran limitados por la resolución. Los puertos analógicos de Arduino UNO tienen una resolución de 10 bits, es decir, cuando mide un dato, nos puede devolver valores entre 0 y 1023. 
@@ -11,7 +11,7 @@ Existen otros modelos con mayor o menor resolución. Depende del tipo de dato y 
 
 Nota: El Arduino UNO sólo cuenta con seis entradas analógicas (A0, A1, ..., A5), no con salidas. Si bien existen salidas PWM que pueden funcionar como salidas analógicas desde pines digitales, no son puras. Existe otro arduino que sí posee salidas analógicas, pero es sólo para audio. Esto nos da la idea de los límites que tiene Arduino. 
 
-#¿Qué es el potenciómetro?
+# ¿Qué es el potenciómetro?
 Es un elemento que nos proporciona resistencias variables en el sistema para que obtengamos diferentes niveles de voltajes, mientras modificamos la posición del regulador.
 
 En cristiano, nos permite variar el voltaje a medida que lo regulamos.
@@ -26,11 +26,11 @@ C: salida a tierra. Se conecta a tiera.
 
 ![]()
 
-#Armando el proyecto
+# Armando el proyecto
 
 El proyecto que vamos a ensamblar, constará de un Led que se encenderá y apagará durante un lapso de tiempo, y que dicho tiempo variará respecto al valor obtenido al girar el potenciómetro. Recordemos que el valor variará de 0 a 1023. 
 
-#Materiales y Equipos
+# Materiales y Equipos
 
 	 - Laptop con el IDE Arduino instalado
 	 - Protoboard
@@ -41,7 +41,7 @@ El proyecto que vamos a ensamblar, constará de un Led que se encenderá y apaga
 	 - Resistencia de 220Ω (Puedes ver el porqué en mi proyecto [helloLed](https://github.com/jmacalupur/helloLed).)
 	 - Cable USB-B 
 
-#Procedimiento
+# Procedimiento
 
 1. Presentamos el diseño del Arduino que realicé en Tinkercad:
 
@@ -72,7 +72,7 @@ int potValue = 0; //asignamos a la variable potValue un valor de 0
 void setup() {
 pinMode(ledRojo, OUTPUT); //indicamos que el puerto "ledRojo" es de salida
 }
-´´´
+```
 
 4. Ahora el código de ejecución. Podrás ver que he colocado una descripción en cada línea para un mayor detalle:
 
@@ -84,7 +84,7 @@ delay(potValue); //damos una demora que es igual al valor de potValue (de 0 a 10
 digitalWrite(ledRojo, LOW); //escribimos el valor LOW (o apagado) en el led.
 delay(potValue); //damos una demora que es igual al valor de potValue (de 0 a 1023)
 }
-´´´
+``
 
 5. Luego lo subimos al arduino a probar. Si no sabes cómo subir el código al Arduino, puedes ver el siguiente tutorial donde explico un poco la funcionalidad de Arduino en [helloLed](https://github.com/jmacalupur/helloLed).
 
