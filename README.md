@@ -88,7 +88,7 @@ delay(potValue); //damos una demora que es igual al valor de potValue (de 0 a 10
 
 6. Si giramos el potenciómetro puedes cambiar la frencuencia de encendido y apagado del led. 
 
-![](https://github.com/jmacalupur/potenciometroLed/blob/develop/03arduinoFisico.JPG)
+![](https://github.com/jmacalupur/potenciometroLed/blob/develop/04testing.gif)
 
 Eso es todo. Ahora ya sabes:
 
