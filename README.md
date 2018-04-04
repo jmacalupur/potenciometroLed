@@ -24,7 +24,7 @@ A: voltaje de operación. Se conecta en el polo positivo.
 B: voltaje de salida . Quiere decir que sale la señal del potenciómetro hacia la entrada del Arduino.
 C: salida a tierra. Se conecta a tiera.
 
-![]()
+![](https://github.com/jmacalupur/potenciometroLed/blob/develop/01potenciometro.JPG)
 
 # Armando el proyecto
 
@@ -45,11 +45,11 @@ El proyecto que vamos a ensamblar, constará de un Led que se encenderá y apaga
 
 1. Presentamos el diseño del Arduino que realicé en Tinkercad:
 
-![]()
+![](https://github.com/jmacalupur/potenciometroLed/blob/develop/02arduinoSimulador.png)
 
 2. Luego lo procedemos a armar:
 
-![]()
+![](https://github.com/jmacalupur/potenciometroLed/blob/develop/03arduinoFisico.JPG)
 
 	No se visualiza bien las conexiones pero lo podemos ver a continuación:
 
