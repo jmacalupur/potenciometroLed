@@ -20,9 +20,9 @@ El potenciómetro que más nos encontraremos en los proyectos es el de 10KΩ.
 
 Normalmente cuenta con tres salidas:
 
-A: voltaje de operación. Se conecta en el polo positivo.
-B: voltaje de salida . Quiere decir que sale la señal del potenciómetro hacia la entrada del Arduino.
-C: salida a tierra. Se conecta a tiera.
+- A: voltaje de operación. Se conecta en el polo positivo.
+- B: voltaje de salida . Quiere decir que sale la señal del potenciómetro hacia la entrada del Arduino.
+- C: salida a tierra. Se conecta a tiera.
 
 ![](https://github.com/jmacalupur/potenciometroLed/blob/develop/01potenciometro.JPG)
 
@@ -32,14 +32,14 @@ El proyecto que vamos a ensamblar, constará de un Led que se encenderá y apaga
 
 # Materiales y Equipos
 
-	 - Laptop con el IDE Arduino instalado
-	 - Protoboard
-	 - Placa Arduino UNO
-	 - Potenciómetro
-	 - Cables macho
-	 - LED
-	 - Resistencia de 220Ω (Puedes ver el porqué en mi proyecto [helloLed](https://github.com/jmacalupur/helloLed).)
-	 - Cable USB-B 
+- Laptop con el IDE Arduino instalado
+- Protoboard
+- Placa Arduino UNO
+- Potenciómetro
+- Cables macho
+- LED
+- Resistencia de 220Ω (Puedes ver el porqué en mi proyecto [helloLed](https://github.com/jmacalupur/helloLed).)
+- Cable USB-B 
 
 # Procedimiento
 
@@ -51,12 +51,12 @@ El proyecto que vamos a ensamblar, constará de un Led que se encenderá y apaga
 
 ![](https://github.com/jmacalupur/potenciometroLed/blob/develop/03arduinoFisico.JPG)
 
-	No se visualiza bien las conexiones pero lo podemos ver a continuación:
+No se visualiza bien las conexiones pero lo podemos ver a continuación:
 
-	Rojo: 		conectado en puerto 5v
-	Azul: 		conectado al puerto GND
-	Amarillo: 	conectado al puerto A0
-	Naranja: 	conectado al puerto 3
+Rojo: 		conectado en puerto 5v
+Azul: 		conectado al puerto GND
+Amarillo: 	conectado al puerto A0
+Naranja: 	conectado al puerto 3
 
 
 3. Ahora viene el código. Primero la configuración. Como verán a continuación podemos asignar variables para "softcodear" nuestro código. 
@@ -84,7 +84,7 @@ delay(potValue); //damos una demora que es igual al valor de potValue (de 0 a 10
 digitalWrite(ledRojo, LOW); //escribimos el valor LOW (o apagado) en el led.
 delay(potValue); //damos una demora que es igual al valor de potValue (de 0 a 1023)
 }
-``
+```
 
 5. Luego lo subimos al arduino a probar. Si no sabes cómo subir el código al Arduino, puedes ver el siguiente tutorial donde explico un poco la funcionalidad de Arduino en [helloLed](https://github.com/jmacalupur/helloLed).
 
