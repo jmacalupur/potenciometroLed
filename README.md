@@ -51,18 +51,15 @@ El proyecto que vamos a ensamblar, constará de un Led que se encenderá y apaga
 
 ![](https://github.com/jmacalupur/potenciometroLed/blob/develop/03arduinoFisico.JPG)
 
-No se visualiza bien las conexiones pero lo podemos ver a continuación:
+En la foto no se visualiza bien las conexiones. Pero los colores están conectados a los siguientes puertos:
 
-Rojo: 		conectado en puerto 5v
-Azul: 		conectado al puerto GND
-Amarillo: 	conectado al puerto A0
-Naranja: 	conectado al puerto 3
+- Rojo: 		conectado en puerto 5v
+- Azul: 		conectado al puerto GND
+- Amarillo: 	conectado al puerto A0
+- Naranja: 	conectado al puerto 3
 
 
-3. Ahora viene el código. Primero la configuración. Como verán a continuación podemos asignar variables para "softcodear" nuestro código. 
-
-Depende de cómo te sientas cómodo, pero es una buena práctica, a fin de que si cambias, por ejemplo el puerto del led de 3 a 2, sólo tendrías que cambiar el valor de la variable.
-
+3. Ahora viene el código. Primero la configuración. Como verán a continuación podemos asignar variables para "softcodear" nuestro código. Depende de cómo te sientas cómodo, pero es una buena práctica, a fin de que si cambias, por ejemplo el puerto del led de 3 a 2, sólo tendrías que cambiar el valor de la variable.
 
 ```
 int ledRojo = 3; //asignamos a la variable ledRojo el valor de 3
@@ -86,11 +83,12 @@ delay(potValue); //damos una demora que es igual al valor de potValue (de 0 a 10
 }
 ```
 
-5. Luego lo subimos al arduino a probar. Si no sabes cómo subir el código al Arduino, puedes ver el siguiente tutorial donde explico un poco la funcionalidad de Arduino en [helloLed](https://github.com/jmacalupur/helloLed).
+5. Luego subimos el código al arduino y ¡a probar!. Si no sabes cómo subir el código al Arduino, puedes ver el siguiente tutorial donde explico un poco la funcionalidad de Arduino en [helloLed](https://github.com/jmacalupur/helloLed).
 
 
 6. Si giramos el potenciómetro puedes cambiar la frencuencia de encendido y apagado del led. 
 
+![](https://github.com/jmacalupur/potenciometroLed/blob/develop/03arduinoFisico.JPG)
 
 Eso es todo. Ahora ya sabes:
 
